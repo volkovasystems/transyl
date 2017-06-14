@@ -1,8 +1,34 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<script
-			type="application/javascript"
-			src="./transyl.deploy.js">
-		</script>
+		<title>transyl unit test</title>
+
+		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+
+		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
+
+		<script type="application/javascript" src="./transyl.deploy.js"></script>
 	</head>
+
+	<body>
+		<div id="qunit"></div>
+
+		<div id="qunit-fixture"></div>
+
+		<script type="application/javascript">
+			QUnit.test( "transyl unit test", function( assert ) {
+
+				let symbol = Symbol( "hello" );
+
+				assert.equal( transyl( symbol, Symbol( "hello" ) ), true, "should be equal" );
+
+				assert.equal( transyl( symbol, "hello", Symbol( "hello" ) ), true, "should be equal" );
+
+				assert.equal( transyl( symbol, Symbol.for( "hello" ) ), true, "should be equal" );
+
+				assert.equal( transyl( symbol, Symbol.for( "hi" ) ), false, "should be equal" );
+				
+			} );
+		</script>
+	</body>
 </html>
