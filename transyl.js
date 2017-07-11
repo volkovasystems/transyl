@@ -37,7 +37,7 @@
 			"eMail": "richeve.bebedor@gmail.com",
 			"contributors": [
 				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-				"Vinse Vinalon"
+				"Vinse Vinalon <vinsevinalon@gmail.com>"
 			],
 			"repository": "https://github.com/volkovasystems/transyl.git",
 			"test": "transyl-test.js",
@@ -87,7 +87,7 @@ const transyl = function transyl( symbol, target ){
 		@end-meta-configuration
 	*/
 
-	if( falzy( symbol ) || !protype( symbol, SYMBOL ) ){
+	if( falzy( symbol ) || typeof symbol != SYMBOL ){
 		throw new Error( "invalid symbol" );
 	}
 
