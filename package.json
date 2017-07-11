@@ -1,6 +1,6 @@
 {
   "name": "transyl",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Compare symbols if similar.",
   "main": "transyl.js",
   "support": "transyl.support.js",
@@ -23,7 +23,7 @@
   "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
   "contributors": [
     "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon"
+    "Vinse Vinalon <vinsevinalon@gmail.com>"
   ],
   "license": "MIT",
   "bugs": {
@@ -33,11 +33,11 @@
   "dependencies": {
     "babel-runtime": "^6.23.0",
     "falzy": "^0.20.0",
-    "mtch": "^0.2.0",
-    "plough": "^0.26.0",
+    "mtch": "^0.4.0",
+    "plough": "^0.28.0",
     "protype": "^0.22.0",
-    "shft": "^0.2.0",
-    "wichevr": "^0.10.0"
+    "shft": "^0.4.0",
+    "wichevr": "^0.13.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -45,6 +45,6 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-latest": "^6.24.1",
     "source-map-loader": "^0.2.1",
-    "webpack": "^2.6.1"
+    "webpack": "^3.1.0"
   }
 }

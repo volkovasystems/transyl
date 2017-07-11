@@ -37,7 +37,7 @@
               			"eMail": "richeve.bebedor@gmail.com",
               			"contributors": [
               				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-              				"Vinse Vinalon"
+              				"Vinse Vinalon <vinsevinalon@gmail.com>"
               			],
               			"repository": "https://github.com/volkovasystems/transyl.git",
               			"test": "transyl-test.js",
@@ -61,7 +61,7 @@
               			"wichevr": "wichevr"
               		}
               	@end-include
-              */
+              */var _typeof2 = require("babel-runtime/helpers/typeof");var _typeof3 = _interopRequireDefault(_typeof2);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 var falzy = require("falzy");
 var mtch = require("mtch");
@@ -87,7 +87,7 @@ var transyl = function transyl(symbol, target) {
                                                 	@end-meta-configuration
                                                 */
 
-	if (falzy(symbol) || !protype(symbol, SYMBOL)) {
+	if (falzy(symbol) || (typeof symbol === "undefined" ? "undefined" : (0, _typeof3.default)(symbol)) != SYMBOL) {
 		throw new Error("invalid symbol");
 	}
 

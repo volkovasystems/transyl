@@ -1,13 +1,13 @@
 {
   "name": "transyl",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Compare symbols if similar.",
   "main": "transyl.deploy.js",
   "support": "transyl.support.js",
   "authors": [
     "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
     "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon"
+    "Vinse Vinalon <vinsevinalon@gmail.com>"
   ],
   "license": "MIT",
   "keywords": [
@@ -26,10 +26,10 @@
   ],
   "dependencies": {
     "falzy": "^0.20.0",
-    "mtch": "^0.2.0",
-    "plough": "^0.26.0",
+    "mtch": "^0.4.0",
+    "plough": "^0.28.0",
     "protype": "^0.22.0",
-    "shft": "^0.2.0",
-    "wichevr": "^0.10.0"
+    "shft": "^0.4.0",
+    "wichevr": "^0.13.0"
   }
 }
