@@ -1,35 +1,35 @@
 {
-  "name": "transyl",
-  "version": "0.2.0",
-  "description": "Compare symbols if similar.",
-  "main": "transyl.deploy.js",
-  "support": "transyl.support.js",
-  "authors": [
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com>"
-  ],
-  "license": "MIT",
-  "keywords": [
-    "compare",
-    "symbols",
-    "similar",
-    "transyl"
-  ],
-  "homepage": "https://github.com/volkovasystems/transyl",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "falzy": "^0.20.0",
-    "mtch": "^0.4.0",
-    "plough": "^0.28.0",
-    "protype": "^0.22.0",
-    "shft": "^0.4.0",
-    "wichevr": "^0.13.0"
-  }
+	"name": "transyl",
+	"version": "0.3.0",
+	"description": "Compare symbols if similar.",
+	"main": "transyl.deploy.js",
+	"support": "transyl.support.js",
+	"authors": [
+		"Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"keywords": [
+		"compare",
+		"symbols",
+		"similar",
+		"transyl"
+	],
+	"homepage": "https://github.com/volkovasystems/transyl",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"falzy": "^0.23.0",
+		"mtch": "^0.6.0",
+		"plough": "^0.29.0",
+		"protype": "^0.23.0",
+		"shft": "^0.5.0",
+		"wichevr": "^0.14.0"
+	}
 }
