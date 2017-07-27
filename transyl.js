@@ -87,7 +87,7 @@ const transyl = function transyl( symbol, target ){
 		@end-meta-configuration
 	*/
 
-	if( falzy( symbol ) || typeof symbol != SYMBOL ){
+	if( falzy( symbol ) || typeof symbol != "symbol" ){
 		throw new Error( "invalid symbol" );
 	}
 
