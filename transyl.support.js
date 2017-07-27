@@ -87,7 +87,7 @@ var transyl = function transyl(symbol, target) {
                                                 	@end-meta-configuration
                                                 */
 
-	if (falzy(symbol) || (typeof symbol === "undefined" ? "undefined" : (0, _typeof3.default)(symbol)) != SYMBOL) {
+	if (falzy(symbol) || (typeof symbol === "undefined" ? "undefined" : (0, _typeof3.default)(symbol)) != "symbol") {
 		throw new Error("invalid symbol");
 	}
 
