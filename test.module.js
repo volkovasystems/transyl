@@ -29,8 +29,8 @@
 
 	@test-configuration:
 		{
-			"package": "<module>",
-			"path": "<module>/test.module.js",
+			"package": "transyl",
+			"path": "transyl/test.module.js",
 			"file": "test.module.js",
 			"module": "test",
 			"author": "Richeve S. Bebedor",
@@ -39,7 +39,7 @@
 				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
 				"Vinse Vinalon <vinsevinalon@gmail.com>"
 			],
-			"repository": "https://github.com/volkovasystems/<module>.git"
+			"repository": "https://github.com/volkovasystems/transyl.git"
 		}
 	@end-test-configuration
 
@@ -50,7 +50,7 @@
 	@include:
 		{
 			"assert": "should",
-			"<module>": "<module>"
+			"transyl": "transyl"
 		}
 	@end-include
 */
@@ -58,11 +58,11 @@
 const assert = require( "should" );
 
 //: @server:
-const <module> = require( "./<module>.js" );
+const transyl = require( "./transyl.js" );
 //: @end-server
 
 //: @client:
-const <module> = require( "./<module>.support.js" );
+const transyl = require( "./transyl.support.js" );
 //: @end-client
 
 //: @bridge:
