@@ -68,3 +68,83 @@ const <module> = require( "./<module>.support.js" );
 //: @bridge:
 const path = require( "path" );
 //: @end-bridge
+
+//: @bridge:
+
+describe( "transyl", ( ) => {
+
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
+
+	describe( "`transyl( symbol, Symbol( 'hello' ) )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let symbol = Symbol( "hello" );
+					return transyl( symbol, Symbol( "hello" ) );
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`transyl( symbol, 'hello', Symbol( 'hello' ) )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let symbol = Symbol( "hello" );
+					return transyl( symbol, "hello", Symbol( "hello" ) );
+				}
+
+			).value;
+			//: @end-ignore
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`transyl( symbol, Symbol.for( 'hello' ) )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let symbol = Symbol( "hello" );
+					return transyl( symbol, Symbol.for( "hello" ) );
+				}
+
+			).value;
+			//: @end-ignore
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`transyl( symbol, Symbol.for( 'hi' ) )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let symbol = Symbol( "hello" );
+					return transyl( symbol, Symbol.for( "hi" ) );
+				}
+
+			).value;
+			//: @end-ignore
+			assert.equal( result, false );
+
+		} );
+	} );
+
+
+} );
+
+//: @end-bridge
