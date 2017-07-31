@@ -72,9 +72,7 @@ const path = require( "path" );
 //: @server:
 
 describe( "transyl", ( ) => {
-
-	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
-
+	
 	describe( "`transyl( symbol, Symbol( 'hello' ) )`", ( ) => {
 		it( "should be equal to true", ( ) => {
 			//: @ignore:
@@ -118,8 +116,6 @@ describe( "transyl", ( ) => {
 //: @client:
 
 describe( "transyl", ( ) => {
-
-	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
 
 	describe( "`transyl( symbol, Symbol( 'hello' ) )`", ( ) => {
 		it( "should be equal to true", ( ) => {
