@@ -72,88 +72,50 @@ const path = require( "path" );
 //: @server:
 
 describe( "transyl", ( ) => {
-	
-	describe( "`transyl( symbol, Symbol( 'hello' ) )`", ( ) => {
+
+	describe( "`transyl( Symbol( 'hello' ), Symbol( 'hello' ) )`", ( ) => {
 		it( "should be equal to true", ( ) => {
-			//: @ignore:
+
 			let symbol = Symbol( "hello" );
 			assert.equal( transyl( symbol, Symbol( "hello" ) ), true );
-			//: @end-ignore
+
 		} );
 	} );
 
-	describe( "`transyl( symbol, 'hello', Symbol( 'hello' ) )`", ( ) => {
+	describe( "`transyl( Symbol( 'hello' ), 'hello', Symbol( 'hello' ) )`", ( ) => {
 		it( "should be equal to true", ( ) => {
-			//: @ignore:
+
 			let symbol = Symbol( "hello" );
 			assert.equal( transyl( symbol, "hello", Symbol( "hello" ) ), true );
-			//: @end-ignore
+
 		} );
 	} );
 
-	describe( "`transyl( symbol, Symbol.for( 'hello' ) )`", ( ) => {
+	describe( "`transyl( Symbol( 'hello' ), Symbol.for( 'hello' ) )`", ( ) => {
 		it( "should be equal to true", ( ) => {
-			//: @ignore:
+
 			let symbol = Symbol( "hello" );
 			assert.equal( transyl( symbol, Symbol.for( "hello" ) ), true );
-			//: @end-ignore
+
 		} );
 	} );
 
-	describe( "`transyl( symbol, Symbol.for( 'hi' ) )`", ( ) => {
+	describe( "`transyl( Symbol( 'hello' ), Symbol.for( 'hi' ) )`", ( ) => {
 		it( "should be equal to false", ( ) => {
-			//: @ignore:
+
 			let symbol = Symbol( "hello" );
-			//: @end-ignore
 			assert.equal( transyl( symbol, Symbol.for( "hi" ) ), false );
 
 		} );
 	} );
+
 } );
 
 //: @end-server
 
 //: @client:
 
-describe( "transyl", ( ) => {
 
-	describe( "`transyl( symbol, Symbol( 'hello' ) )`", ( ) => {
-		it( "should be equal to true", ( ) => {
-			//: @ignore:
-			let symbol = Symbol( "hello" );
-			assert.equal( transyl( symbol, Symbol( "hello" ) ), true );
-			//: @end-ignore
-		} );
-	} );
-
-	describe( "`transyl( symbol, 'hello', Symbol( 'hello' ) )`", ( ) => {
-		it( "should be equal to true", ( ) => {
-			//: @ignore:
-			let symbol = Symbol( "hello" );
-			assert.equal( transyl( symbol, "hello", Symbol( "hello" ) ), true );
-			//: @end-ignore
-		} );
-	} );
-
-	describe( "`transyl( symbol, Symbol.for( 'hello' ) )`", ( ) => {
-		it( "should be equal to true", ( ) => {
-			//: @ignore:
-			let symbol = Symbol( "hello" );
-			assert.equal( transyl( symbol, Symbol.for( "hello" ) ), true );
-			//: @end-ignore
-		} );
-	} );
-
-	describe( "`transyl( symbol, Symbol.for( 'hi' ) )`", ( ) => {
-		it( "should be equal to false", ( ) => {
-			//: @ignore:
-			let symbol = Symbol( "hello" );
-			//: @end-ignore
-			assert.equal( transyl( symbol, Symbol.for( "hi" ) ), false );
-
-		} );
-	} );
-} );
 
 //: @end-client
 
@@ -163,7 +125,7 @@ describe( "transyl", ( ) => {
 
 	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
 
-	describe( "`transyl( symbol, Symbol( 'hello' ) )`", ( ) => {
+	describe( "`transyl( Symbol( 'hello' ), Symbol( 'hello' ) )`", ( ) => {
 		it( "should be equal to true", ( ) => {
 			//: @ignore:
 			let result = browser.url( bridgeURL ).execute(
@@ -181,7 +143,7 @@ describe( "transyl", ( ) => {
 		} );
 	} );
 
-	describe( "`transyl( symbol, 'hello', Symbol( 'hello' ) )`", ( ) => {
+	describe( "`transyl( Symbol( 'hello' ), 'hello', Symbol( 'hello' ) )`", ( ) => {
 		it( "should be equal to true", ( ) => {
 			//: @ignore:
 			let result = browser.url( bridgeURL ).execute(
@@ -198,7 +160,7 @@ describe( "transyl", ( ) => {
 		} );
 	} );
 
-	describe( "`transyl( symbol, Symbol.for( 'hello' ) )`", ( ) => {
+	describe( "`transyl( Symbol( 'hello' ), Symbol.for( 'hello' ) )`", ( ) => {
 		it( "should be equal to true", ( ) => {
 			//: @ignore:
 			let result = browser.url( bridgeURL ).execute(
@@ -215,7 +177,7 @@ describe( "transyl", ( ) => {
 		} );
 	} );
 
-	describe( "`transyl( symbol, Symbol.for( 'hi' ) )`", ( ) => {
+	describe( "`transyl( Symbol( 'hello' ), Symbol.for( 'hi' ) )`", ( ) => {
 		it( "should be equal to false", ( ) => {
 			//: @ignore:
 			let result = browser.url( bridgeURL ).execute(
@@ -231,7 +193,6 @@ describe( "transyl", ( ) => {
 
 		} );
 	} );
-
 
 } );
 
