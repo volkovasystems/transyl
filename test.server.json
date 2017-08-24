@@ -5,8 +5,8 @@
 		"passes": 4,
 		"pending": 0,
 		"failures": 0,
-		"start": "2017-08-24T07:44:52.585Z",
-		"end": "2017-08-24T07:44:52.593Z",
+		"start": "2017-08-24T07:50:17.123Z",
+		"end": "2017-08-24T07:50:17.131Z",
 		"duration": 8
 	},
 	"tests": [
@@ -34,7 +34,7 @@
 		{
 			"title": "should be equal to false",
 			"fullTitle": "transyl `transyl( Symbol( 'hello' ), Symbol.for( 'hi' ) )` should be equal to false",
-			"duration": 0,
+			"duration": 1,
 			"currentRetry": 0,
 			"err": {}
 		}
@@ -66,7 +66,7 @@
 		{
 			"title": "should be equal to false",
 			"fullTitle": "transyl `transyl( Symbol( 'hello' ), Symbol.for( 'hi' ) )` should be equal to false",
-			"duration": 0,
+			"duration": 1,
 			"currentRetry": 0,
 			"err": {}
 		}
