@@ -115,7 +115,45 @@ describe( "transyl", ( ) => {
 
 //: @client:
 
+describe( "transyl", ( ) => {
 
+	describe( "`transyl( Symbol( 'hello' ), Symbol( 'hello' ) )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+
+			let symbol = Symbol( "hello" );
+			assert.equal( transyl( symbol, Symbol( "hello" ) ), true );
+
+		} );
+	} );
+
+	describe( "`transyl( Symbol( 'hello' ), 'hello', Symbol( 'hello' ) )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+
+			let symbol = Symbol( "hello" );
+			assert.equal( transyl( symbol, "hello", Symbol( "hello" ) ), true );
+
+		} );
+	} );
+
+	describe( "`transyl( Symbol( 'hello' ), Symbol.for( 'hello' ) )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+
+			let symbol = Symbol( "hello" );
+			assert.equal( transyl( symbol, Symbol.for( "hello" ) ), true );
+
+		} );
+	} );
+
+	describe( "`transyl( Symbol( 'hello' ), Symbol.for( 'hi' ) )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+
+			let symbol = Symbol( "hello" );
+			assert.equal( transyl( symbol, Symbol.for( "hi" ) ), false );
+
+		} );
+	} );
+
+} );
 
 //: @end-client
 
