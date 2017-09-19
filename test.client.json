@@ -1,11 +1,11 @@
 {
 	"state": {
-		"passed": 4,
+		"passed": 5,
 		"failed": 0,
 		"skipped": 0
 	},
-	"start": "2017-08-24T07:50:18.302Z",
-	"end": "2017-08-24T07:50:52.075Z",
+	"start": "2017-09-19T05:00:17.319Z",
+	"end": "2017-09-19T05:00:52.224Z",
 	"capabilities": {
 		"browserName": "chrome",
 		"chromeOptions": {
@@ -28,84 +28,100 @@
 		{
 			"name": "transyl",
 			"duration": 0,
-			"start": "2017-08-24T07:50:51.694Z",
+			"start": "2017-09-19T05:00:51.768Z",
 			"tests": [],
 			"hooks": []
 		},
 		{
 			"name": "transyl",
-			"duration": 206,
-			"start": "2017-08-24T07:50:51.695Z",
-			"end": "2017-08-24T07:50:51.901Z",
+			"duration": 281,
+			"start": "2017-09-19T05:00:51.769Z",
+			"end": "2017-09-19T05:00:52.050Z",
 			"tests": [],
 			"hooks": [
 				{
-					"start": "2017-08-24T07:50:51.696Z",
-					"end": "2017-08-24T07:50:51.697Z",
+					"start": "2017-09-19T05:00:51.770Z",
+					"end": "2017-09-19T05:00:51.771Z",
 					"duration": 1,
 					"title": "\"before each\" hook",
 					"associatedSuite": "transyl",
 					"associatedTest": "should be equal to true"
 				},
 				{
-					"start": "2017-08-24T07:50:51.790Z",
-					"end": "2017-08-24T07:50:51.790Z",
-					"duration": 0,
+					"start": "2017-09-19T05:00:51.867Z",
+					"end": "2017-09-19T05:00:51.868Z",
+					"duration": 1,
 					"title": "\"after each\" hook",
 					"associatedSuite": "transyl",
 					"associatedTest": "should be equal to true"
 				},
 				{
-					"start": "2017-08-24T07:50:51.791Z",
-					"end": "2017-08-24T07:50:51.792Z",
+					"start": "2017-09-19T05:00:51.868Z",
+					"end": "2017-09-19T05:00:51.869Z",
 					"duration": 1,
 					"title": "\"before each\" hook",
 					"associatedSuite": "transyl",
 					"associatedTest": "should be equal to true"
 				},
 				{
-					"start": "2017-08-24T07:50:51.830Z",
-					"end": "2017-08-24T07:50:51.830Z",
+					"start": "2017-09-19T05:00:51.912Z",
+					"end": "2017-09-19T05:00:51.912Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "transyl",
 					"associatedTest": "should be equal to true"
 				},
 				{
-					"start": "2017-08-24T07:50:51.830Z",
-					"end": "2017-08-24T07:50:51.830Z",
+					"start": "2017-09-19T05:00:51.913Z",
+					"end": "2017-09-19T05:00:51.913Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "transyl",
 					"associatedTest": "should be equal to true"
 				},
 				{
-					"start": "2017-08-24T07:50:51.866Z",
-					"end": "2017-08-24T07:50:51.866Z",
+					"start": "2017-09-19T05:00:51.955Z",
+					"end": "2017-09-19T05:00:51.955Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "transyl",
 					"associatedTest": "should be equal to true"
 				},
 				{
-					"start": "2017-08-24T07:50:51.866Z",
-					"end": "2017-08-24T07:50:51.866Z",
+					"start": "2017-09-19T05:00:51.956Z",
+					"end": "2017-09-19T05:00:51.956Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "transyl",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-09-19T05:00:52.005Z",
+					"end": "2017-09-19T05:00:52.005Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "transyl",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-09-19T05:00:52.006Z",
+					"end": "2017-09-19T05:00:52.006Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "transyl",
 					"associatedTest": "should be equal to false"
 				},
 				{
-					"start": "2017-08-24T07:50:51.900Z",
-					"end": "2017-08-24T07:50:51.900Z",
+					"start": "2017-09-19T05:00:52.050Z",
+					"end": "2017-09-19T05:00:52.050Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "transyl",
 					"associatedTest": "should be equal to false"
 				},
 				{
-					"start": "2017-08-24T07:50:51.901Z",
-					"end": "2017-08-24T07:50:51.901Z",
+					"start": "2017-09-19T05:00:52.050Z",
+					"end": "2017-09-19T05:00:52.050Z",
 					"duration": 0,
 					"title": "\"after all\" hook",
 					"associatedSuite": "transyl"
@@ -114,15 +130,15 @@
 		},
 		{
 			"name": "`transyl( Symbol( 'hello' ), Symbol( 'hello' ) )`",
-			"duration": 96,
-			"start": "2017-08-24T07:50:51.695Z",
-			"end": "2017-08-24T07:50:51.791Z",
+			"duration": 99,
+			"start": "2017-09-19T05:00:51.769Z",
+			"end": "2017-09-19T05:00:51.868Z",
 			"tests": [
 				{
 					"name": "should be equal to true",
-					"start": "2017-08-24T07:50:51.696Z",
-					"end": "2017-08-24T07:50:51.790Z",
-					"duration": 94,
+					"start": "2017-09-19T05:00:51.770Z",
+					"end": "2017-09-19T05:00:51.867Z",
+					"duration": 97,
 					"state": "pass"
 				}
 			],
@@ -130,15 +146,31 @@
 		},
 		{
 			"name": "`transyl( Symbol( 'hello' ), 'hello', Symbol( 'hello' ) )`",
-			"duration": 39,
-			"start": "2017-08-24T07:50:51.791Z",
-			"end": "2017-08-24T07:50:51.830Z",
+			"duration": 44,
+			"start": "2017-09-19T05:00:51.868Z",
+			"end": "2017-09-19T05:00:51.912Z",
 			"tests": [
 				{
 					"name": "should be equal to true",
-					"start": "2017-08-24T07:50:51.791Z",
-					"end": "2017-08-24T07:50:51.830Z",
-					"duration": 39,
+					"start": "2017-09-19T05:00:51.868Z",
+					"end": "2017-09-19T05:00:51.912Z",
+					"duration": 44,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`transyl( Symbol( 1 ), 1 )`",
+			"duration": 43,
+			"start": "2017-09-19T05:00:51.912Z",
+			"end": "2017-09-19T05:00:51.955Z",
+			"tests": [
+				{
+					"name": "should be equal to true",
+					"start": "2017-09-19T05:00:51.912Z",
+					"end": "2017-09-19T05:00:51.955Z",
+					"duration": 43,
 					"state": "pass"
 				}
 			],
@@ -146,15 +178,15 @@
 		},
 		{
 			"name": "`transyl( Symbol( 'hello' ), Symbol.for( 'hello' ) )`",
-			"duration": 36,
-			"start": "2017-08-24T07:50:51.830Z",
-			"end": "2017-08-24T07:50:51.866Z",
+			"duration": 49,
+			"start": "2017-09-19T05:00:51.956Z",
+			"end": "2017-09-19T05:00:52.005Z",
 			"tests": [
 				{
 					"name": "should be equal to true",
-					"start": "2017-08-24T07:50:51.830Z",
-					"end": "2017-08-24T07:50:51.866Z",
-					"duration": 36,
+					"start": "2017-09-19T05:00:51.956Z",
+					"end": "2017-09-19T05:00:52.005Z",
+					"duration": 49,
 					"state": "pass"
 				}
 			],
@@ -162,15 +194,15 @@
 		},
 		{
 			"name": "`transyl( Symbol( 'hello' ), Symbol.for( 'hi' ) )`",
-			"duration": 34,
-			"start": "2017-08-24T07:50:51.866Z",
-			"end": "2017-08-24T07:50:51.900Z",
+			"duration": 44,
+			"start": "2017-09-19T05:00:52.006Z",
+			"end": "2017-09-19T05:00:52.050Z",
 			"tests": [
 				{
 					"name": "should be equal to false",
-					"start": "2017-08-24T07:50:51.866Z",
-					"end": "2017-08-24T07:50:51.900Z",
-					"duration": 34,
+					"start": "2017-09-19T05:00:52.006Z",
+					"end": "2017-09-19T05:00:52.050Z",
+					"duration": 44,
 					"state": "pass"
 				}
 			],

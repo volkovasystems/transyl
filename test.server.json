@@ -1,13 +1,13 @@
 {
 	"stats": {
-		"suites": 5,
-		"tests": 4,
-		"passes": 4,
+		"suites": 6,
+		"tests": 5,
+		"passes": 5,
 		"pending": 0,
 		"failures": 0,
-		"start": "2017-08-24T07:50:17.123Z",
-		"end": "2017-08-24T07:50:17.131Z",
-		"duration": 8
+		"start": "2017-09-19T05:00:16.153Z",
+		"end": "2017-09-19T05:00:16.160Z",
+		"duration": 7
 	},
 	"tests": [
 		{
@@ -26,6 +26,13 @@
 		},
 		{
 			"title": "should be equal to true",
+			"fullTitle": "transyl `transyl( Symbol( 1 ), 1 )` should be equal to true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to true",
 			"fullTitle": "transyl `transyl( Symbol( 'hello' ), Symbol.for( 'hello' ) )` should be equal to true",
 			"duration": 0,
 			"currentRetry": 0,
@@ -34,7 +41,7 @@
 		{
 			"title": "should be equal to false",
 			"fullTitle": "transyl `transyl( Symbol( 'hello' ), Symbol.for( 'hi' ) )` should be equal to false",
-			"duration": 1,
+			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
 		}
@@ -58,6 +65,13 @@
 		},
 		{
 			"title": "should be equal to true",
+			"fullTitle": "transyl `transyl( Symbol( 1 ), 1 )` should be equal to true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to true",
 			"fullTitle": "transyl `transyl( Symbol( 'hello' ), Symbol.for( 'hello' ) )` should be equal to true",
 			"duration": 0,
 			"currentRetry": 0,
@@ -66,7 +80,7 @@
 		{
 			"title": "should be equal to false",
 			"fullTitle": "transyl `transyl( Symbol( 'hello' ), Symbol.for( 'hi' ) )` should be equal to false",
-			"duration": 1,
+			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
 		}

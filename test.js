@@ -49,13 +49,13 @@
 
 	@include:
 		{
-			"assert": "should",
+			"assert": "should/as-function",
 			"transyl": "transyl"
 		}
 	@end-include
 */
 
-const assert = require( "should" );
+const assert = require( "should/as-function" );
 
 //: @server:
 const transyl = require( "./transyl.js" );
@@ -84,6 +84,12 @@ describe( "transyl", ( ) => {
 			let symbol = Symbol( "hello" );
 			assert.equal( transyl( symbol, "hello", Symbol( "hello" ) ), true );
 
+		} );
+	} );
+
+	describe( "`transyl( Symbol( 1 ), 1 )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+			assert.equal( transyl( Symbol( 1 ), 1 ), true );
 		} );
 	} );
 
