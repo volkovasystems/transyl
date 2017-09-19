@@ -49,13 +49,13 @@
 
 	@include:
 		{
-			"assert": "should",
+			"assert": "should/as-function",
 			"transyl": "transyl"
 		}
 	@end-include
 */
 
-const assert = require( "should" );
+const assert = require( "should/as-function" );
 
 //: @server:
 const transyl = require( "./transyl.js" );
@@ -88,6 +88,12 @@ describe( "transyl", ( ) => {
 			let symbol = Symbol( "hello" );
 			assert.equal( transyl( symbol, "hello", Symbol( "hello" ) ), true );
 
+		} );
+	} );
+
+	describe( "`transyl( Symbol( 1 ), 1 )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+			assert.equal( transyl( Symbol( 1 ), 1 ), true );
 		} );
 	} );
 
@@ -132,6 +138,12 @@ describe( "transyl", ( ) => {
 			let symbol = Symbol( "hello" );
 			assert.equal( transyl( symbol, "hello", Symbol( "hello" ) ), true );
 
+		} );
+	} );
+
+	describe( "`transyl( Symbol( 1 ), 1 )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+			assert.equal( transyl( Symbol( 1 ), 1 ), true );
 		} );
 	} );
 
@@ -189,6 +201,22 @@ describe( "transyl", ( ) => {
 				function( ){
 					let symbol = Symbol( "hello" );
 					return transyl( symbol, "hello", Symbol( "hello" ) );
+				}
+
+			).value;
+			//: @end-ignore
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`transyl( Symbol( 1 ), 1 )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return transyl( Symbol( 1 ), 1 );
 				}
 
 			).value;
